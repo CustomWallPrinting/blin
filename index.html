@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+
+<meta charset="utf-8">
+<title>OregonWallPrints</title>
+<base >
+
+<meta name="robots" content="index,follow">
+<meta name="description" content="Print any image you wish on any vertical surface">
+<meta name="generator" content="Contao Open Source CMS">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+
+
+<link rel="stylesheet" href="system/modules/cookiebar/assets/dist/cookiebar.min4b67.css?v=a76b3d69">
+<link rel="stylesheet" href="assets/css/layout.min.css%2cresponsive.min.css%2creset.min.css%2cuniversal-toggle...-3d929cd3.css">
+
+<script src="files/theme/github/michu2k/Accordion/dist/accordion.min9b07.js?v=7b659b1f"></script>
+
+
+<script defer src="bundles/heimseitencontaoscrolltoerror/scroll_to_error.js"></script>
+<script defer src="bundles/heimseitencontaouniversaltoggler/universal-toggler.js"></script>
+
+<link rel="alternate" hreflang="en" href="index.html">
+<link rel="alternate" hreflang="fr" href="fr/index.html">
+<link rel="alternate" hreflang="es" href="es/index.html">
+<link rel="alternate" hreflang="it" href="it/index.html">
+<link rel="alternate" hreflang="nl" href="nl/index.html">
+<link rel="alternate" hreflang="dk" href="dk/OregonWallPrints-vaegprinteren-fremstillet-i-tyskland.html">
+<link rel="alternate" hreflang="cz" href="cz/OregonWallPrints-nastenna-tiskarna-vyrobeno-v-nemecku.html">
+<link rel="alternate" hreflang="pl" href="pl/OregonWallPrints-drukarka-scienna.html">
+<link rel="alternate" hreflang="pt" href="pt/index.html">
+<link rel="alternate" hreflang="tr" href="tr/index.html">
+<link rel="alternate" hreflang="gr" href="gr/index.html">
+
+
+
+<script defer src="files/theme/scroll_stick/scroll_stick.js"></script>
+
+<script defer src="files/theme/plugins/js_parallax/js_parallax.js"></script>
+
+<meta property="og:title" content="OregonWallPrints" />
+
+<meta property="og:type" content="website" /><meta property="og:locale" content="en_US" />
+
+<meta property="og:url" content="https://www.OregonWallPrints.com/en/" />
+
+<script defer src="files/theme/plugins/js_mobile_navigation/js_mobile_navigation.js"></script>
+
+<link rel="preload" href="bundles/contaowowjs/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"<noscript>
+
+<link rel="stylesheet" href="bundles/contaowowjs/animate.min.css"></noscript><script defer src="bundles/contaowowjs/wow.min.js"></script>
+
+<script defer src="bundles/heimseitencontaoinviewport/inViewport.js"></script><script defer src="files/theme/listen_on_change.js"></script>
+
+<script defer src="bundles/heimseitencontaolightgalleryjs/github/sachinchoolur/lightgallery.js/dist/js/lightgallery.min.js"></script>
+
+<script defer src="bundles/heimseitencontaolightgalleryjs/github/sachinchoolur/lg-video.js/dist/lg-video.min.js"></script>
+
+<script defer src="bundles/heimseitencontaolightgalleryjs/settings.js"></script>
+
+<!--style for the navi bar-->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+<style type="text/css">
+
+    
+
+@media screen and (max-width: 1023px) {
+  video.myVideoBox {
+    display: none;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 7%;
+  background-color: #ffffff;
+}
+
+.logo1212 {
+  cursor: pointer;
+}
+
+.nav__links a,
+.cta1212,
+.overlay1212__content a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.nav__links li {
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: color 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+.cta1212 {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+}
+
+.cta1212:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* Mobile Nav */
+
+.menu {
+  display: none;
+}
+
+.overlay1212 {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #f5f6ff;
+  overflow-x: hidden;
+  transition: width 0.5s ease 0s;
+  z-index: 2;
+}
+
+.overlay1212--active {
+  width: 100%;
+}
+
+.overlay1212__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+color:#ffffff;
+}
+
+.logo1212{
+    color: rgb(0, 0, 0);
+}
+
+.overlay1212 a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: color 0.3s ease 0s;
+}
+
+.overlay1212 a:hover,
+.overlay1212 a:focus {
+  color: #0088a9;
+}
+.overlay1212 .close {
+  position: absolute;
+  top: 40px;
+  right: 45px;
+  font-size: 60px;
+  color: #000000;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay1212 a {
+    font-size: 20px;
+  }
+  .overlay1212 .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav__links,
+  .cta1212 {
+    display: none;
+  }
+  .menu {
+    display: initial;
+  }
+}
+
+
+
+
+
+</style>
+
+
+<link rel="preload" href="files/theme/github/michu2k/Accordion/dist/accordion.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"<!-- Facebook Pixel Datenschutz (C) www.webseitenschutzpaket.de -->
+
+
+<script>
+
+var fpProperty='mde-service';var fpdisableStr='fp-disable-'+fpProperty;
+
+function fpOptout(){
+    
+    document.cookie=fpdisableStr+'=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';window[fpdisableStr]=!0;alert("Der Facebook Pixel ist deaktiviert und wird nicht mehr geladen, bitte Seiten neu laden")
+
+}
+
+function activatePixelMDE(){
+
+    document.cookie=fpdisableStr+'=true; Max-Age=-99999999;path=/';window[fpdisableStr]=!1;alert("Facebook Pixel wird beim nächsten Laden der Seite aktiviert")
+
+}
+
+if(document.cookie.indexOf(fpdisableStr+'=true')>-1){
+    
+    console.log(atob("RmFjZWJvb2sgUGl4ZWwgaXN0IGRlYWt0aXZpZXJ0LiBEYXRlbnNjaHV0ei1NZWNoYW5pc211cyB2b24gaHR0cDovL3d3dy5tZWluZS1kYXRlbnNjaHV0emVya2xhZXJ1bmcuZGU="))
+    
+    }else{!function(f,b,e,v,n,t,s){
+        
+        if(f.fbq)return;n=f.fbq=function(){
+            
+            n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)
+        
+        };
+        
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)
+        
+        }(window,document,'script','connect.facebook.net/en_US/fbevents.js');fbq('init','2051522461760028');
+        
+        fbq('track','PageView');
+
+        console.log(atob("RGF0ZW5zY2h1dHotTWVjaGFuaXNtdXMgdm9uIGh0dHA6Ly93d3cubWVpbmUtZGF0ZW5zY2h1dHplcmtsYWVydW5nLmRl"))
+    
+    }
+        
+</script>
+
+
+
+
+
+
+</head>
+
+
+
+
+<body id="top1212" class="win other1212 " itemscope itemtype="http://schema.org/WebPage">
+
+    <header>
+        <a class="logo1212" href="index.html"><h1 style="text-align: center; margin: 0; font-size:2rem; font-weight: 500;">OregonWallPrints</h1></a>
+        <nav>
+            <ul style="text-align: center; margin: 0;" class="nav__links">
+                <li><a  href="Gallery.html">Gallery</a></li>
+                <li><a  href="faq.html">FAQ</a></li>
+                <li><a style="margin-right:4.5rem;" href="faq.html">About</a></li>
+            </ul>
+        </nav>
+        <a class="cta1212" href="#">Contact</a>
+        <p class="menu cta1212">Menu</p>
+    </header>
+    <div class="overlay1212">
+        <a style="cursor:pointer; padding: 0" class="close">&times;</a>
+        <div class="overlay1212__content">
+          <a  href="Gallery.html">Gallery</a>
+          <a  href="faq.html">FAQ</a>
+          <a  href="faq.html">About</a>
+        </div>
+    </div>
+
+    <!--this ones script is herererererere-->
+    <script type="text/javascript" >
+        const doc = document;
+const menuOpen = doc.querySelector(".menu");
+const menuClose = doc.querySelector(".close");
+const overlay1212 = doc.querySelector(".overlay1212");
+
+menuOpen.addEventListener("click", () => {
+  overlay1212.classList.add("overlay1212--active");
+});
+
+menuClose.addEventListener("click", () => {
+  overlay1212.classList.remove("overlay1212--active");
+});
+
+    </script>
+
+
+<div  style="display:flex; justify-content:center;">
+
+<video class="myVideoBox" style="width:100%"  muted autoplay playsinline loop poster="index.html">
+    <source src="head vis.mp4" type="video/mp4">
+</video>
+
+</div>
+<div id="container" style="margin-top:0">
+
+<main id="main">
+<div class="inside">
+<div class="mod_article video desktop full_width under_header block" id="article-2057">
+
+
+
+
+</div>
+<div class="mod_article video mobile full_width under_header block" id="article-2058">
+
+    
+<div  class="bg video"><div class="inside" ><video class="v_2058" muted autoplay playsinline loop poster="index.html"><source src="files/media/Videos/Header_e2_800x450.mp4" type="video/mp4"></video></div></div>
+</div>
+
+
+
+<div class="mod_article block" id="article-942">
+<div class="ce_text center _container block">
+<div class="text">
+<h1 style="text-align: center;">Any vertical surface. Any image.</h1>
+<h2 style="text-align: center;"><span style="color: #808080;">Turn plain walls into impressive eye-catchers.</span></h2>    </div>
+</div>
+</div>
+<div class="mod_article walls full_width block" id="article-936">
+<div class="ce_image wall block">
+<figure class="image_container">
+
+<source srcset="images/Wood-Background-155bd240.webp" type="image/webp">
+<img src="files/media/Wandmaterialien/Wood-Background.png" width="1920" height="1280" alt="" loading="lazy" itemprop="image">
+
+</figure>
+</div>
+<div class="ce_image print_motive toggle_wood block">
+<figure class="image_container">
+
+<source srcset="images/Wood-Image-e18ff293.webp" type="image/webp">
+<img src="files/media/Wandmaterialien/Wood-Image.png" width="1920" height="1280" alt="" loading="lazy" itemprop="image">
+
+</figure>
+</div>
+<div class="ce_rsce_flexbox_begin block ce_flexbox ce_4253 " >
+<style type="text/css">.ce_4253>.flexbox_inside{display:flex;flex-wrap:wrap;position:relative;box-sizing:border-box;justify-content:center;align-items:normal}.ce_4253>.flexbox_inside>*{box-sizing:border-box;width:calc(100% - ((0px + 0px)/2));display:flex;flex-wrap:wrap;background:rgba(255,255,255,0);padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;align-content:flex-end;justify-content:center;transition:all s ease-in-out}.ce_4253>.flexbox_inside>*:hover{transform:scale()}</style>
+<div class="flexbox_inside">
+<div class="text flying_text">
+<p class="parallax prlx_up prlxs_3 white_text view_toggler toggle_wood" style="text-align: center;">Wood</p>
+<div class="vp_trigger ivp"></div>
+</div>    </div>
+</div>
+</div>
+<div class="mod_article walls full_width block" id="article-971">
+<div class="ce_image wall block">
+<figure class="image_container">
+
+<source srcset="images/Concrete-Background-f941c471.webp" type="image/webp">
+<img src="files/media/Wandmaterialien/Concrete-Background.png" width="1920" height="1280" alt="" loading="lazy" itemprop="image">
+
+</figure>
+</div>
+<div class="ce_image print_motive toggle_concrete block">
+<figure class="image_container">
+
+<source srcset="assets/images/0/Concrete-Image-57759119.webp" type="image/webp">
+<img src="files/media/Wandmaterialien/Concrete-Image.png" width="1920" height="1280" alt="" loading="lazy" itemprop="image">
+
+</figure>
+</div>
+<div class="ce_rsce_flexbox_begin block ce_flexbox ce_4434 " >
+<style type="text/css">.ce_4434>.flexbox_inside{display:flex;flex-wrap:wrap;position:relative;box-sizing:border-box;justify-content:center;align-items:normal}.ce_4434>.flexbox_inside>*{box-sizing:border-box;width:calc(100% - ((0px + 0px)/2));display:flex;flex-wrap:wrap;background:rgba(255,255,255,0);padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;align-content:flex-end;justify-content:center;transition:all s ease-in-out}.ce_4434>.flexbox_inside>*:hover{transform:scale()}</style>
+<div class="flexbox_inside">
+<div class="text flying_text">
+<p class="parallax prlx_up prlxs_3 white_text view_toggler toggle_concrete" style="text-align: center;">Concrete</p>
+</div>    </div>
+</div>
+</div>
+<div class="mod_article walls full_width block" id="article-972">
+<div class="ce_image wall block">
+<figure class="image_container">
+
+<source srcset="images/Plaster-Background-ceed84c7.webp" type="image/webp">
+<img src="files/media/Wandmaterialien/Plaster-Background.png" width="1920" height="1280" alt="" loading="lazy" itemprop="image">
+
+</figure>
+</div>
+<div class="ce_image print_motive toggle_plaster block">
+<figure class="image_container">
+
+<source srcset="images/Plaster-Image-e5f87f10.webp" type="image/webp">
+<img src="files/media/Wandmaterialien/Plaster-Image.png" width="1920" height="1280" alt="" loading="lazy" itemprop="image">
+
+</figure>
+</div>
+<div class="ce_rsce_flexbox_begin block ce_flexbox ce_4439 " >
+<style type="text/css">.ce_4439>.flexbox_inside{display:flex;flex-wrap:wrap;position:relative;box-sizing:border-box;justify-content:center;align-items:normal}.ce_4439>.flexbox_inside>*{box-sizing:border-box;width:calc(100% - ((0px + 0px)/2));display:flex;flex-wrap:wrap;background:rgba(255,255,255,0);padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;align-content:flex-end;justify-content:center;transition:all s ease-in-out}.ce_4439>.flexbox_inside>*:hover{transform:scale()}</style>
+<div class="flexbox_inside">
+<div class="text flying_text">
+<p class="parallax prlx_up prlxs_3 white_text view_toggler toggle_plaster" style="text-align: center;">Plaster</p>
+</div>    </div>
+</div>
+</div>
+<div class="mod_article walls full_width block" id="article-973">
+<div class="ce_image wall block">
+<figure class="image_container">
+
+<source srcset="images/Brick-Background-aa2a85f4.webp" type="image/webp">
+<img src="files/media/Wandmaterialien/Brick-Background.png" width="1920" height="1280" alt="" loading="lazy" itemprop="image">
+
+</figure>
+</div>
+<div class="ce_image print_motive toggle_brick block">
+<figure class="image_container">
+
+<source srcset="images/Brick-Image-1176adf6.webp" type="image/webp">
+<img src="files/media/Wandmaterialien/Brick-Image.png" width="1920" height="1280" alt="" loading="lazy" itemprop="image">
+
+</figure>
+</div>
+<div class="ce_rsce_flexbox_begin block ce_flexbox ce_4444 " >
+<style type="text/css">.ce_4444>.flexbox_inside{display:flex;flex-wrap:wrap;position:relative;box-sizing:border-box;justify-content:center;align-items:normal}.ce_4444>.flexbox_inside>*{box-sizing:border-box;width:calc(100% - ((0px + 0px)/2));display:flex;flex-wrap:wrap;background:rgba(255,255,255,0);padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;align-content:flex-end;justify-content:center;transition:all s ease-in-out}.ce_4444>.flexbox_inside>*:hover{transform:scale()}</style>
+<div class="flexbox_inside">
+<div class="text flying_text">
+<p class="parallax prlx_up prlxs_3 white_text view_toggler toggle_brick" style="text-align: center;">Brick/Stone</p>
+</div>    </div>
+</div>
+</div>
+<div class="mod_article walls full_width block" id="article-974">
+<div class="ce_image wall block">
+<figure class="image_container">
+
+<source srcset="images/Glass-Background-e916df47.webp" type="image/webp">
+<img src="files/media/Wandmaterialien/Glass-Background.png" width="1920" height="1280" alt="" loading="lazy" itemprop="image">
+
+</figure>
+</div>
+<div class="ce_image print_motive toggle_glass block">
+<figure class="image_container">
+
+<source srcset="images/Glass-Image-2833b819.webp" type="image/webp">
+<img src="files/media/Wandmaterialien/Glass-Image.png" width="1920" height="1280" alt="" loading="lazy" itemprop="image">
+
+</figure>
+</div>
+<div class="ce_rsce_flexbox_begin block ce_flexbox ce_4449 " >
+<style type="text/css">.ce_4449>.flexbox_inside{display:flex;flex-wrap:wrap;position:relative;box-sizing:border-box;justify-content:center;align-items:normal}.ce_4449>.flexbox_inside>*{box-sizing:border-box;width:calc(100% - ((0px + 0px)/2));display:flex;flex-wrap:wrap;background:rgba(255,255,255,0);padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;align-content:flex-end;justify-content:center;transition:all s ease-in-out}.ce_4449>.flexbox_inside>*:hover{transform:scale()}</style>
+<div class="flexbox_inside">
+<div class="text flying_text">
+<p class="parallax prlx_up prlxs_3 white_text view_toggler toggle_glass" style="text-align: center;">Glass</p>
+</div>    </div>
+</div>
+</div>
+
+
+<div class="mod_article walls full_width block" id="article-975">
+<div class="ce_image wall block">
+
+<figure class="image_container">
+
+<source srcset="images/Metal-Background-42c68333.webp" type="image/webp">
+<img src="files/media/Wandmaterialien/Metal-Background.png" width="1920" height="1280" alt="" loading="lazy" itemprop="image">
+
+</figure>
+</div>
+
+
+<div class="ce_image print_motive toggle_metal block">
+<figure class="image_container">
+
+<source srcset="images/Metal-Image-f9c8b163.webp" type="image/webp">
+<img src="files/media/Wandmaterialien/Metal-Image.png" width="1920" height="1280" alt="" loading="lazy" itemprop="image">
+
+</figure>
+</div>
+<div class="ce_rsce_flexbox_begin block ce_flexbox ce_4454 " >
+<style type="text/css">.ce_4454>.flexbox_inside{display:flex;flex-wrap:wrap;position:relative;box-sizing:border-box;justify-content:center;align-items:normal}.ce_4454>.flexbox_inside>*{box-sizing:border-box;width:calc(100% - ((0px + 0px)/2));display:flex;flex-wrap:wrap;background:rgba(255,255,255,0);padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;align-content:flex-end;justify-content:center;transition:all s ease-in-out}.ce_4454>.flexbox_inside>*:hover{transform:scale()}</style>
+<div class="flexbox_inside">
+<div class="text flying_text">
+<p class="parallax prlx_up prlxs_3 white_text view_toggler toggle_metal" style="text-align: center;">Metal</p>
+</div>    </div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="mod_article clean_environment gray block" id="article-938">
+<div style=width:1400px;max-width:100%;margin-left:auto;margin-right:auto;>
+<div class="ce_text _container block wow fadeInUp" data-wow-duration="2.5s" data-wow-offset="100">
+<div class="text">
+<h1 style="text-align: center;">Perfect prints, clean environment</h1>    </div>
+</div>
+<div class="ce_rsce_flexbox_begin big_icons block ce_flexbox ce_4260 has_border"  >
+<style type="text/css">.ce_4260>.flexbox_inside{display:flex;flex-wrap:wrap;position:relative;box-sizing:border-box;margin-top:20px;margin-right:-20px;margin-left:-20px;justify-content:center;align-items:normal}.ce_4260>.flexbox_inside>*{box-sizing:border-box;width:calc(50% - ((40px + 40px)/2));background:rgba(255,255,255,1);border-width:1px;border-color:#ddd;border-radius:2px;border-style:solid;margin-top:calc(40px / 2);margin-right:calc(40px / 2);margin-bottom:calc(40px / 2);margin-left:calc(40px / 2);padding-top:20px;padding-right:30px;padding-bottom:20px;padding-left:30px;transition:all s ease-in-out}.ce_4260>.flexbox_inside>*:hover{transform:scale()}</style>
+<div class="flexbox_inside">
+<div class="ce_text _container block wow fadeInLeft" data-wow-duration="2.5s" data-wow-offset="100">
+<div class="text">
+<p style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M546.2 9.7c-2.9-6.5-8.6-9.7-14.3-9.7-5.3 0-10.7 2.8-14 8.5C486.9 62.4 431.4 96 368 96h-80C182 96 96 182 96 288c0 17.8 2.6 34.9 7.1 51.2C29 403.7 1.8 478.8 1.3 480.2c-4.3 12.5 2.3 26.2 14.8 30.5 14 4.8 26.7-3.8 30.5-14.8.4-1.1 21-57.5 76.3-110.1C160.5 449 231.5 487 308.4 478.9 465.5 467.5 576 326.7 576 154.3c0-50.2-10.8-102.2-29.8-144.6zM303.4 431.2c-86.1 9.1-130.6-54.5-142.2-76.5 47.4-32.9 112-58.7 198.9-58.7 13.2 0 24-10.8 24-24s-10.8-24-24-24c-91.3 0-161.1 25.5-214 59.4-.9-6.4-2-12.8-2-19.4 0-79.4 64.6-144 144-144h80c57.9 0 111.6-22 152-60.9 5.2 23.2 8 47.5 8 71.2-.1 151-93.9 267.4-224.7 276.9z"/></svg></p>
+<p style="text-align: center;"><strong>No waste</strong> due to stencils or foil remnants</p>    </div>
+</div>
+
+
+<div class="ce_text _container block wow fadeInLeft" data-wow-duration="2.5s" data-wow-offset="100">
+<div class="text">
+<p style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M7.11 224.51c-4.99-2.37-9.39 4.09-5.49 8l85.11 85.13c6 6 9.37 14.14 9.37 22.63V384h43.73c8.49 0 16.62 3.37 22.62 9.37l117.13 117.16c3.86 3.86 10.31-.56 7.98-5.49C206.47 333.11 63.46 251.26 7.11 224.51zM246.69 29.63c6 6 9.37 14.14 9.37 22.63V96h43.73c8.49 0 16.62 3.37 22.62 9.37l52.25 52.26c6 6 9.37 14.14 9.37 22.63V224h43.72c8.49 0 16.62 3.37 22.62 9.37l53.14 53.16c3.86 3.86 10.31-.56 7.98-5.49C430.42 109.11 287.41 27.26 231.05.51c-4.99-2.37-9.39 4.09-5.49 8l21.13 21.12zm262.25 436.9l-1.44-3.03C453.42 347.77 321.51 134.06 45.64 3.14 31.74-3.47 15.02.89 6.06 13.53-2.97 26.3-1.51 43.59 7.8 52.74l144.28 179.7V296h62.05l65.92 65.94V424h64.42l114.97 80.47a31.741 31.741 0 0 0 20.5 7.48c6.44 0 12.87-1.92 18.46-5.86 12.69-8.93 17.13-25.56 10.54-39.56zM359.6 376h-31.56v-33.94L234 248h-33.93v-32.44L92.85 82.16C277.03 188.93 382.78 335.35 435.9 429.43L359.6 376z"/></svg></p>
+<p style="text-align: center;"><strong>Durable and scratch-resistant</strong> prints</p>    </div>
+</div>
+<div class="ce_text _container block wow fadeInRight" data-wow-duration="2.5s" data-wow-offset="100">
+<div class="text">
+<p style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M512 320s-64 92.65-64 128c0 35.35 28.66 64 64 64s64-28.65 64-64-64-128-64-128zm-9.37-102.94L294.94 9.37A31.94 31.94 0 0 0 272.31 0c-8.19 0-16.38 3.12-22.62 9.37L162.5 96.56 70.62 4.69c-6.25-6.25-16.38-6.25-22.63 0L36.69 16c-6.25 6.25-6.25 16.38 0 22.63l91.88 91.88L28.11 230.95c-37.49 37.48-37.49 98.26 0 135.75L145.3 483.89c18.74 18.74 43.31 28.12 67.87 28.12 24.57 0 49.13-9.37 67.87-28.12l221.57-221.57c12.51-12.51 12.51-32.76.02-45.26zM247.11 449.95C238.05 459.01 226 464 213.18 464s-24.87-4.99-33.93-14.05L65.3 336h295.75L247.11 449.95zM409.06 288H49.34c2-8.67 6.27-16.67 12.71-23.11L162.5 164.44l69.9 69.9c9.37 9.37 24.56 9.37 33.94 0 9.37-9.37 9.37-24.57 0-33.94l-69.9-69.9 75.87-75.87 185.05 185.06-48.3 48.31z"/></svg></p>
+<p style="text-align: center;"><strong>No use of solvents or thinners</strong> on your walls.</p>    </div>
+</div>
+<div class="ce_text _container block wow fadeInLeft" data-wow-duration="2.5s" data-wow-offset="100">
+<div class="text">
+<p style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M480 128c-17.67 0-32 14.33-32 32s14.33 32 32 32 32-14.33 32-32-14.33-32-32-32zm0 96c-17.67 0-32 14.33-32 32s14.33 32 32 32 32-14.33 32-32-14.33-32-32-32zm0-128c17.67 0 32-14.33 32-32s-14.33-32-32-32-32 14.33-32 32 14.33 32 32 32zm-96 32c-17.67 0-32 14.33-32 32s14.33 32 32 32 32-14.33 32-32-14.33-32-32-32zm0-96c-17.67 0-32 14.33-32 32s14.33 32 32 32 32-14.33 32-32-14.33-32-32-32zm-96 0c-17.67 0-32 14.33-32 32s14.33 32 32 32 32-14.33 32-32-14.33-32-32-32zm-64 96V32c0-17.67-14.33-32-32-32h-64c-17.67 0-32 14.33-32 32v96c-53.02 0-96 42.98-96 96v256c0 17.67 14.33 32 32 32h256c17.67 0 32-14.33 32-32V224c0-53.02-42.98-96-96-96zm-80-80h32v80h-32V48zm128 416H48V224c0-26.47 21.53-48 48-48h128c26.47 0 48 21.53 48 48v240zM160 256c-35.35 0-64 28.65-64 64s28.65 64 64 64 64-28.65 64-64-28.65-64-64-64z"/></svg></p>
+<p style="text-align: center;"><strong>Odorless &amp; harmless</strong> even in case of fire</p>    </div>
+</div>
+
+
+</div>
+
+
+    
+    </div>
+
+    
+</div>
+
+
+
+
+
+
+
+
+</div>
+</main>
+</div>
+<footer id="footer">
+<div class="inside">
+<!-- indexer::stop -->
+<div class="footer_main">
+<div class="ce_rsce_flexbox_begin block ce_flexbox ce_4324 " >
+<style type="text/css">.ce_4324>.flexbox_inside>div:nth-child(4){width:calc(27% - ((70px + 70px)/2))}.ce_4324>.flexbox_inside{display:flex;flex-wrap:wrap;position:relative;box-sizing:border-box;margin-top:10px;margin-right:-40px;margin-bottom:40px;margin-left:-40px;justify-content:center;align-items:flex-start}.ce_4324>.flexbox_inside>*{box-sizing:border-box;width:calc(24% - ((70px + 70px)/2));background:rgba(255,255,255,0);margin-top:calc(80px / 2);margin-right:calc(70px / 2);margin-left:calc(70px / 2);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;transition:all s ease-in-out}.ce_4324>.flexbox_inside>*:hover{transform:scale()}</style>
+<div class="flexbox_inside">
+<div>
+<div class="ce_text _container block">
+<div class="text">
+<p style="text-align: center; font-size:2rem"><strong>Contact</strong></p>    </div>
+</div>
+<div class="ce_text _container block">
+<div class="text">
+
+
+<p style="text-align: center;"><strong>OregonWallPrints@gmail.com</strong></p>
+<p style="text-align: center;"><strong>Or</strong></p>
+
+<p style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    
+    <path d="M487.8 24.1L387 .8c-14.7-3.4-29.8 4.2-35.8 18.1l-46.5 108.5c-5.5 12.7-1.8 27.7 8.9 36.5l53.9 44.1c-34 69.2-90.3 125.6-159.6 159.6l-44.1-53.9c-8.8-10.7-23.8-14.4-36.5-8.9L18.9 351.3C5 357.3-2.6 372.3.8 387L24 487.7C27.3 502 39.9 512 54.5 512 306.7 512 512 307.8 512 54.5c0-14.6-10-27.2-24.2-30.4zM55.1 480l-23-99.6 107.4-46 59.5 72.8c103.6-48.6 159.7-104.9 208.1-208.1l-72.8-59.5 46-107.4 99.6 23C479.7 289.7 289.6 479.7 55.1 480z"/>
+
+</svg >  +503-828-5038<br><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+   
+</svg>
+
+</div>
+</div>
+
+
+
+    
+
+<style type="text/css">
+    
+    .ce_4337>.flexbox_inside{
+
+        display:flex;
+        flex-wrap:wrap;
+        position:relative;
+        box-sizing:border-box;
+        margin-top:0;margin-right:0;
+        margin-bottom:0;
+        margin-left:0;
+        justify-content:flex-start;
+        align-items:flex-start
+    }
+
+    
+    .ce_4337>.flexbox_inside>*{
+        box-sizing:border-box;
+       /*   width:calc(% - ((10px + 10px)/2));   */     /*CHECK HERE HERE HERE HERE*/
+
+        background:rgba(255,255,255,0);
+        margin-top:calc(0px / 2);
+        margin-right:calc(10px / 2);
+        margin-bottom:calc(0px / 2);
+        margin-left:calc(10px / 2);
+        padding-top:0;
+        padding-right:0;
+        padding-bottom:0;
+        padding-left:0;
+        transition:all s ease-in-out
+        }
+        
+        .ce_4337>.flexbox_inside>*:hover{
+
+            transform:scale()
+        }
+            
+             
+            
+            </style>
+
+
+
+
+
+    
+ 
+</div>
+</div>
+
+
+</div>
+<hr>
+
+
+<script id="_etLoader" type="text/javascript" charset="UTF-8" data-block-cookies="true" data-respect-dnt="true" data-secure-code="i9s1km" src="static.etracker.com/code/e.js"></script>
+
+</div>
+
+
+<span class="visitor_count invisible"><!-- counted --></span>
+<script>document.addEventListener('DOMContentLoaded',function(){var iWidth=window.innerWidth||(window.document.documentElement.clientWidth||window.document.body.clientWidth);var iHeight=window.innerHeight||(window.document.documentElement.clientHeight||window.document.body.clientHeight);var sWidth=screen.width;var sHeight=screen.height;var visitorurl='visitors/screencount?vcid=2&scrw='+sWidth+'&scrh='+sHeight+'&scriw='+iWidth+'&scrih='+iHeight+'';try{fetch(visitorurl,{method:'GET',headers:{'X-Requested-With':'XMLHttpRequest',}}).catch(error=>console.error('error:',error))}catch(r){return}})</script>
+<!-- indexer::continue -->            </div>
+</footer>
+</div>
+<div class="custom">
+<div id="nav_mobile">
+<div class="inside">
+<!-- indexer::stop -->
+<nav class="mod_navigation block" itemscope itemtype="http://schema.org/SiteNavigationElement">
+<a href="index.html#skipNavigation74" class="invisible">Skip navigation</a>
+<ul class="level_1">
+<li class="submenu sibling first"><a href="team.html" title="OregonWallPrints Germany - About us" class="submenu sibling first" aria-haspopup="true" itemprop="url"><span itemprop="name">About us</span></a>
+<ul class="level_2">
+<li class="first"><a href="team.html" title="OregonWallPrints Germany - Team" class="first" itemprop="url"><span itemprop="name">Team</span></a></li>
+<li class="last"><a href="our-story.html" title="OregonWallPrints - Our story" class="last" itemprop="url"><span itemprop="name">Our story</span></a></li>
+</ul>
+</li>
+<li class="submenu sibling"><a href="faq.html" title="FAQ" class="submenu sibling" aria-haspopup="true" itemprop="url"><span itemprop="name">FAQ</span></a>
+<ul class="level_2">
+<li class="first"><a href="faq.html" title="OregonWallPrints Germany - Frequently Asked Questions" class="first" itemprop="url"><span itemprop="name">FAQ - The top 10</span></a></li>
+<li class="last"><a href="further-faq.html" title="OregonWallPrints Germany - Other frequently asked questions" class="last" itemprop="url"><span itemprop="name">Further FAQ</span></a></li>
+</ul>
+</li>
+<li class="sibling"><a href="partner.html" title="OregonWallPrints Germany - Our partners worldwide" class="sibling" itemprop="url"><span itemprop="name">Partner</span></a></li>
+<li class="sibling"><a href="Gallery.html" title="OregonWallPrints Germany - Gallery" class="sibling" itemprop="url"><span itemprop="name">Gallery</span></a></li>
+<li class="sibling"><a href="contact.html" title="OregonWallPrints Germany - Contact us" class="sibling" itemprop="url"><span itemprop="name">Contact</span></a></li>
+<li class="sibling last"><a href="tel::+5038285038" title=" +503-828-5038" class="sibling last" itemprop="url"><span itemprop="name"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M487.8 24.1L387 .8c-14.7-3.4-29.8 4.2-35.8 18.1l-46.5 108.5c-5.5 12.7-1.8 27.7 8.9 36.5l53.9 44.1c-34 69.2-90.3 125.6-159.6 159.6l-44.1-53.9c-8.8-10.7-23.8-14.4-36.5-8.9L18.9 351.3C5 357.3-2.6 372.3.8 387L24 487.7C27.3 502 39.9 512 54.5 512 306.7 512 512 307.8 512 54.5c0-14.6-10-27.2-24.2-30.4zM55.1 480l-23-99.6 107.4-46 59.5 72.8c103.6-48.6 159.7-104.9 208.1-208.1l-72.8-59.5 46-107.4 99.6 23C479.7 289.7 289.6 479.7 55.1 480z"/></svg> +503-828-5038</span></a></li>
+</ul>
+<a id="skipNavigation74" class="invisible">&nbsp;</a>
+</nav>
+<!-- indexer::continue -->
+</div>
+</div>
+</div>
+
+<style>form.submitted button.submit{pointer-events:none;z-index:0}</style>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded",function(event){disable_button_after_click()
+
+
+
+function disable_button_after_click(){
+    
+    Array.prototype.slice.call(document.querySelectorAll('form'),0).forEach(function(element){element.addEventListener('submit',function(e){element.classList.add('submitted')
+    
+if(element.querySelector('[type="submit"]')){element.querySelector('[type="submit"]').innerText="will be sent"
+
+element.querySelector('[type="submit"]').classList.add('submits')}})})}})
+
+</script>
+
+
+<script>
+
+
+document.addEventListener("DOMContentLoaded",function(event){js_mobile_navigation.run({menu_position_under_header:!0})})
+
+</script>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded",function(event){new WOW().init()})
+
+</script>
+
+
+<script>
+
+document.addEventListener('DOMContentLoaded',function(event){form_activate_label_on_input_focus()
+
+function form_activate_label_on_input_focus(){
+    
+    document.querySelectorAll('form input').forEach(e=>{setEventListener(e)})
+    
+    document.querySelectorAll('form textarea').forEach(e=>{setEventListener(e)})
+    
+    setTimeout(function(){document.querySelectorAll(':-webkit-autofill').forEach(e=>{e.parentElement.classList.add('active')})
+    
+    document.querySelectorAll('form input').forEach(e=>{if(e.value!=''){e.parentElement.classList.add('active')}})
+    
+    document.querySelectorAll('form textarea').forEach(e=>{if(e.value!=''){e.parentElement.classList.add('active')}})},100)
+
+
+}
+
+function setEventListener(e){
+    
+    e.addEventListener('change',toggleClassActive)
+e.addEventListener('focusin',toggleClassActive)
+
+e.addEventListener('focusout',toggleClassActive)
+
+}
+function toggleClassActive(){
+    
+    if(this.value.length==0){
+        
+        if(this===document.activeElement){
+            
+            this.parentElement.classList.add('active')
+            
+            }else{this.parentElement.classList.remove('active')
+                
+        }
+            
+    }else{
+        this.parentElement.classList.add('active')}}})
+
+
+        </script>
+        
+        <script>
+        
+        document.addEventListener("DOMContentLoaded",function(event){if(document.querySelector('.accordion-container')){new Accordion('.accordion-container')}})
+        
+        </script>
+        
+        <script defer src="bundles/heimseitencontaotinyslider/dist/min/tiny-slider.js"></script><script defer src="bundles/heimseitencontaotinyslider/tiny-slider-settings.js"></script><script type="application/ld+json">{"@context":{"contao":"https:\/\/schema.contao.org\/"},"@type":"contao:Page","contao:title":"OregonWallPrints - wall printer Made in Germany","contao:pageId":134,"contao:noSearch":true,"contao:protected":false,"contao:groups":[],"contao:fePreview":false}</script>
+
+</html>
